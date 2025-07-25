@@ -177,3 +177,55 @@ body {
 .back-link:hover {
     color: #aaa;
 }
+
+/* ================================== */
+/* === RESPONSIVE DESIGN FOR MOBILE === */
+/* ================================== */
+/* These styles will only apply on screens smaller than 768px (like tablets and phones) */
+
+@media (max-width: 768px) {
+
+    /* Make the layout stack vertically instead of side-by-side */
+    .price-list-container {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        box-shadow: none;
+    }
+
+    /* Change the vertical title to a normal, horizontal one */
+    .title-container {
+        writing-mode: horizontal-tb;
+        transform: none;
+        text-align: center;
+        width: auto;
+    }
+    
+    /* Reduce the font size of the vertical title text */
+    .title-container h1 {
+        font-size: 2em;
+        letter-spacing: 5px;
+        padding: 15px 10px;
+    }
+    
+    /* Reduce the font size of the main title */
+    .main-site-title {
+        font-size: 1.8em;
+        padding-top: 20px;
+    }
+
+    /* Reduce the padding inside the main content box */
+    .services-container {
+        padding: 20px;
+    }
+    
+    /* Reduce the font size of the "Our Products" title */
+    .services-container h2 {
+        font-size: 1.5em;
+    }
+
+    /* Make the item and price text slightly smaller */
+    .service-item .item, .service-item .price {
+        font-size: 1em;
+    }
+}
