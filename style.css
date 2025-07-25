@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap'); /* Added Cairo for better Arabic font */
+
+body {
+    /* Changed font-family to prioritize Cairo for Arabic */
+    font-family: 'Cairo', 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80');
+    background-size: cover;
+    background-position: center;
+}
+
+/* ADJUSTED STYLES FOR THE MAIN TITLE */
+.main-site-title {
+    text-align: center;
+    color: #fff;
+    font-size: 2.8em; 
+    padding: 0 0 20px 0; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid #555; 
+    margin-bottom: 20px; 
+}
+.price-list-container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.title-container {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-container h1 {
+    font-size: 4em;
+    margin: 0;
+    white-space: nowrap;
+    letter-spacing: 10px;
+}
+
+.services-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    width: 100%;
+}
+
+/* NEW: Styles for the header containing the title and link */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+}
+
+/* ADJUSTED: Old h2 styles are now simpler */
+.services-container h2 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+/* NEW: Styles for the "Contact Us" link */
+.contact-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 8px 15px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-link:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+
+.category h3 {
+    font-size: 1.8em;
+    color: #fff;
+    border-bottom: 1px solid #555;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+.service-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #333;
+}
+
+.service-item .item {
+    font-size: 1.2em;
+}
+
+.service-item .price {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.notes {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #555;
+}
+
+.notes p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* === ADD THESE NEW STYLES TO YOUR CSS FILE === */
+
+.contact-page-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Adds space between contact cards */
+    margin-top: 40px;
+    text-align: center;
+}
+
+.contact-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s;
+}
+
+.contact-card:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.contact-icon svg {
+    margin-bottom: 10px;
+}
+
+.contact-card h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.5em;
+}
+
+.contact-card p {
+    margin: 0;
+    font-size: 1.2em;
+    color: #ccc;
+}
+
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.back-link:hover {
+    color: #aaa;
+}
